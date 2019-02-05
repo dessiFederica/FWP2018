@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #c6ced2;
+}
+
+header {
+    background-color: #0b3559;
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+}
+
+login {
+    text-align: right;
+    font-size: 15px;
+    color: white;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+.grid-container-nav { 
+     display: grid;
+     grid-template-rows: auto auto auto;
+     grid-gap: 10px;
+     padding: 10px;
+}
+
+.grid-container-nav > div {
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+  font-size: 14px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+content {
+    float: left;
+    padding: 20px;
+    width: 70%;
+   
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #0b3559;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container > div {
+  border-color: #0b3559;
+  border-style:solid;
+  background-color: #c6ced2;
+  text-align: left;
+  padding: 20px 20px 20px 20px;
+  font-size: 14px;
+}
+
+
+input[type=text], input[type=password], input[type=date]{
+    width: 200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+textArea{
+    width: 400px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: #0b3559;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border-color: #c6ced2;
+    border-style:solid;
+    cursor: pointer;
+}
+
+button{
+    background-color: #0b3559;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border-color: #c6ced2;
+    border-style:solid;
+    cursor: pointer;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #0b3559;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav, content {
+        width: 100%;
+        height: auto;
+    }
+}
